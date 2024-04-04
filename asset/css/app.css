@@ -1,0 +1,49 @@
+/** Modulos, Bem, SMACSS */
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+/* Globales */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header y Navegacion  */
+
+.nombre-sitio{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: #037bc0;
+
+}
+
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1
+}
+.nav-principal{
+    border-width: 1px;
+
+    padding: 50px 0 30px 20px;
+}
+
+.hero{
+    background-image: url("../img/principal.jpg");
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
