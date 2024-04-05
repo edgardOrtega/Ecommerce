@@ -18,6 +18,11 @@ a{
     margin: 0 auto;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
+
 
 /* Header y Navegacion  */
 
@@ -36,9 +41,9 @@ a{
     border-top: 1px solid #e1e1e1
 }
 .nav-principal{
-    border-width: 1px;
-
-    padding: 50px 0 30px 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero{
@@ -46,4 +51,26 @@ a{
     height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* Categorias */
+
+.categorias h2{
+    text-align: center;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #FFFFFF;
+    border-bottom-right-radius: 10px;
+}
+.listado-categorias{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
 }
