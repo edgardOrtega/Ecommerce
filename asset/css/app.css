@@ -38,7 +38,7 @@ a{
 
 .contenedor{
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 
 img{
@@ -46,6 +46,11 @@ img{
     display: block;
 }
 
+/* utilidades */
+
+.text-center{
+    text-align: center;
+}
 
 /* Header y Navegacion  */
 
@@ -73,10 +78,15 @@ img{
     background-image: url("../img/principal.jpg");
     height: 55rem;
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 /* Categorias */
+
+.categorias {
+    padding-top: 5rem;
+}
 
 .categorias h2{
     text-align: center;
@@ -97,3 +107,69 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 gap:2rem;
 }
+
+/* Bloque Nosotros */
+
+.sobre-nosotros {
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%,#037bc0 
+    100%  ), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+
+/* 
+ lo mismo pero con grid
+
+.sobre-nosotros-grid {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8rem;
+}
+
+.texto-nosotros {
+    grid-column: 2/3;
+} */
+
+.sobre-nosotros-grid {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros {
+    flex-basis: 50%;
+    padding-left:10rem;
+    color:#FFF;
+}
+
+
+/*  Listado de Productos */
+
+.contenido-principal{
+    padding-top: 5rem;
+}
+
+.producto {
+    background-color: #037bc0;
+}
+.text-producto {
+    text-align: center;
+    color: #FFF;
+}
+
+.text-producto h3 {
+    margin: 0;
+}
+.text-producto p {
+    margin: 0 0 .5rem;
+}
+.text-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.text-producto a {
+    text-align: center;
+    color: #FFF;
+}
+
